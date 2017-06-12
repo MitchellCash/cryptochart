@@ -1,5 +1,33 @@
 @charset "utf-8";
 
+.notification {
+  background: #313D3E;
+  box-sizing: border-box;
+  color: white;
+  padding: 16px 24px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.notification sup,
+.notification sub {
+  font-size: initial;
+  vertical-align: initial;
+  bottom: 0;
+  line-height: initial;
+  position: initial;
+}
+
+.notification em {
+  font-style: normal;
+  color: #8B8B8B;
+  padding: 0 8px;
+}
+
+.notification .text-link {
+  text-decoration: underline;
+}
+
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -17,6 +45,35 @@ body {
 }
 
 h1 { font-size: 76px; }
+h1 > em {
+  color: white;
+  font-weight: 100;
+  line-height: 31px;
+  font-size: 24px;
+  max-width: 244px;
+  display: inline-block;
+  text-align: left;
+  border-left: 1px solid white;
+  padding-left: 16px;
+  font-style: normal;
+}
+h1 > strong {
+  color: white;
+  display: block;
+  font-size: 16px;
+  font-weight: 200;
+  font-style: italic;
+  max-width: 400px;
+  margin: 0 auto 35px auto;
+}
+h1 > strong > a,
+h1 > strong > a:link,
+h1 > strong > a:active,
+h1 > strong > a:visited,
+h1 > strong > a:hover {
+  color: white;
+  font-weight: 600;
+}
 h2 { font-size: 49px; font-weight: 100; }
 h3 {
   font-size: 47px;
@@ -261,6 +318,63 @@ pre {
   padding: 6px;
   line-height: 1.4;
 }
+
+.landing .deploy-to-netlify {
+  margin: 0 0 20px 0;
+}
+
+.landing .deploy-to-netlify h3 {
+  font-size: 24px;
+  margin: 26px 0 16px 0;
+}
+
+.landing .deploy-to-netlify p {
+  font-size: 14px;
+}
+
+.deploy-to-netlify {
+  margin: 64px 0;
+}
+
+.deploy-to-netlify hr {
+  color: #fefefe;
+  border-top: 1px solid #fefefe;
+  margin-bottom: 30px;
+}
+
+.deploy-to-netlify h3,
+.deploy-to-netlify p {
+  margin-bottom: 24px;
+}
+
+.deploy-to-netlify em {
+  color: grey;
+  display: block;
+  font-style: italic;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.deploy {
+  display: block;
+  margin: 22px 0 0 0;
+}
+
+a.deploy-btn {
+  min-height: 43px;
+  width: 100%;
+}
+
+a.deploy-btn img {
+  width: 100%;
+}
+
+a.deploy-btn-interior img {
+  margin: -4px 0 0 0;
+  box-shadow: none;
+  width: auto;
+}
+
 .sheet:after {
   content: "";
   display: table;

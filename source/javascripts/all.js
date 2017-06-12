@@ -16,7 +16,11 @@ $(function() {
     }
   });
 
-  $(".navbar").pin()
+  // This is a band-aid for the broken menu bar problem
+  $(window).on('resize', function(){
+    $('.navbar').attr('style', '').removeData('pin');
+    $('.navbar').pin();
+  });
 
   var sortAscending = {title: true};
 
