@@ -49,6 +49,13 @@ title: Top Open-Source Cryptocurrencies
             <dd><%= project.license %></dd>
           </dl>
         </div>
+        <% if index == 2 %>
+          <li id="deploy-to-netlify" class="project deploy-to-netlify">
+            <h3>Missing a cryptocurrency?</h3>
+            <p>If you would like to see your favourite cryptocurrency tracked by CryptoChart, lodge a request <a href="https://github.com/mitchellcash/cryptochart/issues/new">here</a>.<br><br>
+            Want to see your favourite cryptocurrency featured in top position? Send an <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#099;&#114;&#121;&#112;&#116;&#111;&#099;&#104;&#097;&#114;&#116;&#046;&#105;&#111;?subject=Enquiry about promoting a cryptocurrency">email</a> to enquire about paid positions.</p>
+          </li>
+        <% end %>
       </li>
     <% end %>
   </ul>
